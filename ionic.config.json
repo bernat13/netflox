@@ -1,0 +1,7 @@
+{
+  "name": "netflox",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
