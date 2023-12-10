@@ -16,7 +16,7 @@ if not os.path.exists(directorio_destino):
 # Descargar las imágenes
 for pelicula in data['movies']:
     nombre_archivo = pelicula['poster_path']  # Ajusta esto al nombre del campo del JSON que contiene el nombre del archivo JPEG
-    url_imagen = pelicula['poster_path']  # Ajusta esto al nombre del campo del JSON que contiene la URL de la imagen
+    url_imagen ="https://image.tmdb.org/t/p/w600_and_h900_bestv2/" +  pelicula['poster_path']  # Ajusta esto al nombre del campo del JSON que contiene la URL de la imagen
 
     # Descargar la imagen
     response = requests.get(url_imagen)
